@@ -1,0 +1,14 @@
+.banner{
+  background-image: asset-url('cinema.jpg');
+  backdrop-filter: blur(1px) grayscale(60%);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: FLEX;
+  align-items: center;
+  justify-content: center;
+}
+.banner-text{
+  color: white;
+}

@@ -1,0 +1,14 @@
+<div class="cards_grid">
+<% @list.bookmarks.each do |bookmark| %>
+  <div class="movie_card">
+    <img class="movie_poster" src=<%=bookmark.movie.poster_url%> alt="">
+    <div class="card_text">
+    <div class="movie_rating">
+      <h2 class="card_title"><%= bookmark.movie.title  %></h2> -
+        <%= bookmark.movie.rating %> <i class="fas fa-star"></i>
+      </div><br>
+      <%= bookmark.movie.overview  %> <br>
+    </div>
+  </div>
+<% end %>
+</div>

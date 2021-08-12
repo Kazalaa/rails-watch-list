@@ -1,0 +1,6 @@
+<%= simple_form_for(@list) do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Submit list", class: "btn btn-outline-success" %>
+<% end %>
+<br>
+<%= link_to "Back to the lists", lists_path, class: "btn btn-outline-primary" %>

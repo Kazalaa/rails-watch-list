@@ -1,0 +1,54 @@
+.cards_grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.list_card{
+  width: 250px;
+  height: 250px;
+  background-image: asset-url('movie.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+    align-items: center;
+    justify-content: center;
+  a{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    width: 200px;
+  }
+}
+
+.list_header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.movie_poster{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.movie_card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.fas{
+  color:#FEDE01;
+}
+.movie_rating{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.card_text{
+  padding-left: 20px;
+}
+.card_title{
+  padding-right: 20px;
+}
