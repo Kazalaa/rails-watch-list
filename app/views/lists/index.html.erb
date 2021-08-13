@@ -9,9 +9,11 @@
   </div>
   <div class="cards_grid">
       <% @lists.each do |list| %>
-        <div class="list_card">
-          <%= link_to list.name, list_path(list) %>
-        </div>
+        <%= link_to list_path(list) do%>
+          <div class="list_card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path list.photo.key %>')">
+          <div class="card-list-name"> <%= list.name %> </div>
+          </div>
+        <% end %>
       <% end %>
   </div>
 </div>
