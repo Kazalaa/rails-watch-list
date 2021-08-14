@@ -17,7 +17,14 @@
         <%= image_tag "logo.png", alt: "Pop Corn", width: 50 %>
         <% end %>
       <div class="navbar-links">
-        My Lists
+        <ul class="navbar-ul">
+          <li class="nav-item active">
+            <%= link_to "My lists", root_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item active">
+            <%= link_to "New list", new_list_path, class: "nav-link" %>
+          </li>
+        </ul>
       </div>
     </div>
     <%= yield %>

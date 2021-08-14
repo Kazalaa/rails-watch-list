@@ -1,6 +1,6 @@
 .cards_grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   padding: 20px;
 }
@@ -40,7 +40,7 @@
   border: 1px solid black;
   background-color: #fffafa;
 }
-.fas{
+.review-font{
   color:#FEDE01;
 }
 .movie_rating{
@@ -50,6 +50,16 @@
 }
 .card_text{
   padding-left: 20px;
+  display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.testtruc{
+  display: flex;
+    flex-grow: 1;
+}
+.testtruc2{
+  margin-top: 20px;
 }
 .card_title{
   padding-right: 20px;

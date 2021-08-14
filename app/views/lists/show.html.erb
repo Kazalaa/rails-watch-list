@@ -1,6 +1,10 @@
+<div class="testtest">
 <div class="card_category" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @list.photo.key %>')">
   <div class="card-list-name"><%= @list.name %></div>
+  <%= link_to 'delete this list', list_path(@list), method: :delete, class: 'btn btn-cancel', data: { confirm: 'Are you sure you want to delete this list?' } %>
+  </div>
 </div>
+      <%= link_to 'add a movie', new_list_bookmark_path(@list), class: 'btn btn-flat' %>
 <div class="cards_grid">
 <% @list.bookmarks.each do |bookmark| %>
   <div class="movie_card">
@@ -8,9 +12,14 @@
     <div class="card_text">
     <div class="movie_rating">
       <h2 class="card_title"><%= bookmark.movie.title  %></h2> -
-        <%= bookmark.movie.rating %> <i class="fas fa-star"></i>
+        <%= bookmark.movie.rating %> <i class="fas fa-star review-font"></i>
       </div><br>
+      <div class="testtruc">
       <%= bookmark.movie.overview  %> <br>
+      </div>
+      <div class="testtruc2">
+      </div>
+      <i class="fas fa-quote-left mr-2 comment-font"></i><%= bookmark.comment %> <br>
     </div>
   </div>
 <% end %>

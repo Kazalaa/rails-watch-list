@@ -5,10 +5,14 @@
   background-size: cover;
   height: 500px;
   width: 100%;
-  display: FLEX;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .banner-text{
+  color: white;
+}
+.banner-title{
   color: white;
 }
